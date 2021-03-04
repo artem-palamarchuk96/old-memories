@@ -1,0 +1,594 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="js/jquery.fancybox.css">
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery.fancybox.pack.js"></script>
+
+	<script src="js/jquery.flexslider-min.js"></script>
+
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<!--[if it IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/html5shiv-printshiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+<!-- HEADER -->
+<div class="fluid-container header">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<a href="#">
+					<img src="images/logo.png" class="logo">
+					<p class="header-text">Брусовая дача</p>
+					<p class="subline-header-text">Строительство домов и бань из бруса</p>
+				</a>	
+			</div>
+
+			<div class="col-xs-3">
+				<input class="button-yellow" value="Бесплатная консультация" type="submit">
+				<p class="everyday-9-to-22">Ежедневно с 9:00 до 22:00</p>
+			</div>
+			<div class="col-xs-3">
+				<p class="tel-number">8 (8162) <span class="tel-number-bold">600-600</span></p>
+				<p class="tel-number">8 (8162) <span class="tel-number-bold">600-700</span></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="fluid-container navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul id="navigation">
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Каталог проектов</a></li>
+					<li><a href="#">Галерея</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#" id="info-button">Информация</a>
+						<ul class="dropdown none">
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Материалы</a></li>
+							<li><a href="#">Полезные статьи о строительстве</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<span class="empty-row"></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="fluid-container mainfon">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-7 col-xs-offset-5">
+				<div class="free-calc-wrapper">
+					<input class="button-free-calc" value="Бесплатный расчет проекта" type="submit">
+					<a class="take-project-text" href="#">Подобрать проект</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+
+<div class="fluid-container choose-your-gift">
+	<div class="container">
+		<div class="row">
+			<p class="title-text">Выберите свой подарок!</p>
+			<div class="col-xs-6 slide-item">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  				<!-- Indicators -->
+  					<ul class="carousel-indicators">
+    					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+   						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  					</ul>
+
+ 					 <!-- Wrapper for slides -->
+ 					<div class="carousel-inner" role="listbox">
+    					<div class="item active">
+      						<img src="images/choose-your-gift-slide2.png" alt="...">
+
+      						<div class="carousel-caption">
+      							
+      						</div>
+    					</div>
+    					<div class="item">
+      						<img src="images/choose-your-gift-slide2.png" alt="...">
+      						<div class="carousel-caption">
+
+      						</div>
+    					</div>
+    					<div class="item">
+      						<img src="images/choose-your-gift-slide2.png" alt="...">
+      						<div class="carousel-caption">
+
+      						</div>
+    					</div>
+
+  					</div>
+  				<input class="button-free" value="Бесплатно!" type="submit">
+  				<img src="images/carousel.png" class="grey-cloud">
+				</div>
+
+			</div>	
+
+			<div class="col-xs-5 col=xs-offset-1">
+				<p class="membrana-text">Подкровельная</p>
+				<p class="membrana-text d">мембрана</p>
+					<p class="subline-membrana-text">
+					Сложности с выбором? Мы предлагаем множество проектов домов и бань из бруса и наши специалисты всегда рады помочь Вам!<br/> 
+
+					<strong>Обратитесь за</strong> 
+					<a href="#" class="dotted">бесплатной консультацией</a>
+				</p>
+				<input class="details-button" value="Подробности" type="submit">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- ПОПУЛЯРНЫЕ ПРОЕКТЫ -->
+<div class="fluid-container popular-project">
+<div class="container">
+	<div class="row">
+		<p class="title-text">Популярные проекты</p>
+		<!-- СЛАЙДЕР -->
+		<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+
+			<div class="carousel-inner">
+
+				<div class="item active">
+					<!-- TAB1 -->
+					<div class="col-xs-4 project">
+						<div class="percent">
+							<img src="images/percent.png">
+							<span>%</span>
+						</div>
+
+						<div class="slides">
+							<img src="images/projectimg.png">
+
+							<div class="caption">
+								<div class="title">
+									Проект дома БД-44<br/>
+								</div>
+
+								<div class="size">
+									<span>
+										86 м<sup>2</sup> / 6x9 м
+									</span><br/>
+								</div>
+
+								<div>
+									<span class="mprice">
+										от<sup class="line"> 1 400 000</sup> 
+										<span class="price">
+											1 2000 000 <span class="rubl">a</span>
+										</span>
+									</span>
+								</div>
+							</div>
+
+							<a class="watch">
+								Смотреть проект
+							</a>
+						</div>
+					</div>
+
+					<!-- TAB2 -->
+					<div class="col-xs-4 project">
+						<div class="slides">
+							<img src="images/projectimg.png">
+							<div class="caption">
+								<div class="title">
+									Проект дома БД-44<br/>
+								</div>
+
+								<div class="size">
+									<span>
+										86 м<sup>2</sup> / 6x9 м
+									</span><br/>
+								</div>
+
+								<div>
+									<span class="mprice">
+										от 
+										<span class="price">
+											600 000 <span class="rubl">a</span>
+										</span>
+									</span>
+								</div>
+							</div>
+
+							<a class="watch">
+								Смотреть проект
+							</a>
+						</div>
+					</div>
+
+					<!-- TAB3 -->
+					<div class="col-xs-4 project">
+						<div class=" slides">
+							<img src="images/projectimg.png">
+							<div class="caption">
+								<div class="title">
+									Проект дома БД-44<br/>
+								</div>
+
+								<div class="size">
+									<span>
+										86 м<sup>2</sup> / 6x9 м
+									</span><br/>
+								</div>
+
+								<div>
+									<span class="mprice">
+										от 
+										<span class="price">
+											1 2000 000 <span class="rubl">a</span>
+										</span>
+									</span>
+								</div>
+							</div>
+
+							<a class="watch">
+								Смотреть проект
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<!-- СЛЕДУЮЩИЕ СЛАЙДЫ -->
+
+					<!-- TAB4 -->
+					<div class="col-xs-4 project">
+						<div class=" slides">
+							<img src="images/projectimg.png">
+							<div class="caption">
+								<div class="title">
+									Проект дома БД-44<br/>
+								</div>
+
+								<div class="size">
+									<span>
+										86 м<sup>2</sup> / 6x9 м
+									</span><br/>
+								</div>
+
+								<div>
+									<span class="mprice">
+										от 
+										<span class="price">
+											600 000 <span class="rubl">a</span>
+										</span>
+									</span>
+								</div>
+							</div>
+
+							<a class="watch">
+								Смотреть проект
+							</a>
+						</div>
+					</div>	
+					
+					<!-- TAB5 -->
+					<div class="col-xs-4 project">
+						<div class=" slides">
+							<img src="images/projectimg.png">
+							<div class="caption">
+								<div class="title">
+									Проект дома БД-44<br/>
+								</div>
+
+								<div class="size">
+									<span>
+										86 м<sup>2</sup> / 6x9 м
+									</span><br/>
+								</div>
+
+								<div>
+									<span class="mprice">
+										от 
+										<span class="price">
+											1 2000 000 <span class="rubl">a</span>
+										</span>
+									</span>
+								</div>
+							</div>
+
+							<a class="watch">
+								Смотреть проект
+							</a>
+						</div>
+					</div>	
+
+					<!-- TAB6 -->
+					<div class="col-xs-4 project">
+						<div class=" slides">
+							<img src="images/projectimg.png">
+							<div class="caption">
+								<div class="title">
+									Проект дома БД-44<br/>
+								</div>
+
+								<div class="size">
+									<span>
+										86 м<sup>2</sup> / 6x9 м
+									</span><br/>
+								</div>
+
+								<div>
+									<span class="mprice">
+										от
+										<span class="price">
+											1 4000 000 <span class="rubl">a</span>
+										</span>
+									</span>
+								</div>
+							</div>
+
+							<a class="watch">
+								Смотреть проект
+							</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+			<!-- перключатели -->
+			<a class="left to-left" href="#carousel-example-generic2" role="button" data-slide="prev">
+				<img src="images/arrow.png" onmouseover="this.src='images/active-arrow-l.png'" onmouseout="this.src='images/arrow.png'">
+			</a>
+
+			<a class="right to-right" href="#carousel-example-generic2" role="button" data-slide="next">
+				<img src="images/arrow-r.png" onmouseover="this.src='images/active-arrow.png'" onmouseout="this.src='images/arrow-r.png'">
+			</a>
+		</div>
+	</div> 
+</div>
+</div>
+
+
+<div class="fluid-container your-benefits">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="title-text">Ваши выгоды</p>
+				<div class="float-img">
+					<img src="images/house231(1).png">
+					<p class="float-img-text">
+						<strong>Свобода творчества</strong><br/>
+						Вы можете внести изменения в уже готовые проекты или предложить свой вариант.
+					</p>
+				</div>
+				<div class="float-img">
+					<img src="images/title.png">
+					<p class="float-img-text">
+						<strong>Гарантия</strong><br/>
+						Мы даем гарантию на строительство и используемые материалы в 1 год.
+				</div>
+				<div class="float-img">
+					<img src="images/0percent.png">
+					<p class="float-img-text">
+						<strong>Предоплата 0%</strong><br/>
+						Вы платите 30% после доставки материалов, 70% по окончанию работ.
+					</p>
+				</div>
+				<div class="float-img">
+					<img src="images/work25.png">
+					<p class="float-img-text">
+						<strong>Надежные бригады</strong><br/>
+						У нас работают только надежные и профессиональные строители.
+					</p>
+				</div>
+				<div class="float-img">
+					<img src="images/construction41.png">
+					<p class="float-img-text">
+						<strong>Долговечность</strong><br/>
+						Долговечность наших домов обеспечают проверенные материалы и качественный брус.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- О РАБОТЕ С -->
+	<div class="fluid-container about">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-4">
+					<div class="head">
+						<p class="title-text title-text-left regularfont">О работе c</p>
+						<p class="title-text title-text-left">СК «Брусовая дача»</p> 
+					</div>
+					<div class="text">
+						<p>
+							Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности требуют определения и уточнения модели развития. Повседневная практика показывает, что укрепление и развитие структуры требуют определения и уточнения модели развития. Товарищи! новая модель организационной деятельности способствует подготовки и реализации.
+						</p><br/>
+						<p>
+
+							Таким образом сложившаяся структура организации в значительной степени обуславливает создание систем массового участия.	
+						</p>
+						<a href="#">Читать полностью</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div class="fluid-container gallery">
+	<div class="container">
+		<div class="row">
+			<p class="title-text regularfont">Наши постройки</p>
+			<div class="col-xs-6">
+				<a href="images/galbig.png" class="fancy project-image">
+					<img src="images/galbig.png" alt=""/>
+				</a>
+			</div>	
+			<div class="col-xs-6">
+				<div class="thumbn">
+					<a rel="group-1" href="images/gal1-gal6.png">
+						<img src="images/gal1-gal6.png">
+					</a>
+					<a rel="group-2" href="images/gal2-gal7.png">
+						<img src="images/gal2-gal7.png">
+					</a>
+					<a rel="group-3" href="images/gal3-gal5.png">
+						<img src="images/gal3-gal5.png">
+					</a>	
+				</div>
+				<div class="thumbn">
+					<a rel="group-1" href="images/gal4.png">
+						<img src="images/gal4.png">
+					</a>
+					<a rel="group-2" href="images/gal3-gal5.png">
+						<img src="images/gal3-gal5.png">
+					</a>
+					<a rel="group-3" href="images/gal1-gal6.png">
+						<img src="images/gal1-gal6.png">
+					</a>	
+				</div>
+				<div class="thumbn">
+					<a rel="group-1" href="images/gal2-gal7.png">
+						<img src="images/gal2-gal7.png">
+					</a>
+					<a rel="group-2" href="images/gal8.png">
+						<img src="images/gal8.png">
+					</a>
+					<a rel="group-3" href="images/gal9.png">
+						<img src="images/gal9.png">
+						<p class="go-in-gsllery">В галерею</p>
+					</a>	
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+
+<!-- ВСЕ О СТОРИТЕЛЬСТВЕ -->
+<div class="container articl">
+	<div class="row">
+		<p class="title-text regularfont">Все о строительстве</p>
+		<!-- ПЕРВЫЙ -->
+		<div class="col-xs-4 project">
+			<div class="articles">
+				<img src="images/art1.png">
+				<div class="art-cap">
+					<div class="title-art">
+						Преимущества каркасного дома
+					</div>
+					<div class="text-art">
+						Повседневная практика показывает, что укрепление и развитие структуры в значительной степени обуславливает создание системы...
+					</div>
+				</div>
+
+				<a class="watch">
+					Подробнее в статье
+				</a>
+			</div>
+		</div>
+
+		<!-- ВТОРОЙ	 -->
+		<div class="col-xs-4 project">
+			<div class="articles">
+				<img src="images/art2.png">
+				<div class="art-cap">
+					<div class="title-art">
+						Виды кровельных покрытий.<br/>
+						Подложки под кровлю.
+					</div>
+					<div class="text-art">
+						Повседневная практика показывает, что укрепление и развитие структуры в значитель...
+					</div>
+				</div>
+
+				<a class="watch">
+					Подробнее в статье
+				</a>
+			</div>
+		</div>
+
+		<!-- ТРЕТИЙ -->
+		<div class="col-xs-4 project">
+			<div class="articles">
+				<img src="images/art3.png">
+				<div class="art-cap">
+					<div class="title-art">
+						Какой брус выбрать?
+					</div>
+					<div class="text-art">
+						Повседневная практика показывает, что укрепление и развитие структуры в значительной степени обуславливает создание системы...
+					</div>
+				</div>
+
+				<a class="watch">
+					Подробнее в статье
+				</a>
+			</div>
+		</div>	
+
+		<a href="#" class="art">Архив статей</a>
+	</div>
+</div>
+
+
+
+
+<div class="fluid-container footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="footer-left-side-wrapper">
+					<img src="images/footer-logo.png">
+					<p>© 2015 СК “Брусовая дача”</p>
+					<p class="footer-address">г. В. Новгород, ул. Рабочая 21/5,  офис 29</p>
+					<a href="#">brusdacha@gmail.com </a>
+					<p class="footer-social-text">Присоединяйтесь к нам в соц.сетях:</p>
+					<a href="#" class="soc-button vk"></a>
+					<a href="#" class="soc-button odn"></a>
+				</div>
+			</div>
+
+			<div class="col-xs-6">
+				<div class="footer-right-side-wrapper">
+					<p class="footer-number">8 (8162) 
+						<span class="tel-number-bold">600-700</span> / 8 (8162) 
+						<span class="tel-number-bold">600-600</span>
+					</p>
+					<input class="reverse-call-button" value="Обратный звонок" type="submit">
+					<p class="developer"><a href="#"></a></p>
+				</div>
+			</div>		
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+body {
+		background-image: url(images/bg.jpg);
+	}
+
+.btn-primary {
+	background-color: #cdae51 !important;
+border-color: #3F2B22 !important;
+color: #000000 !important;
+}

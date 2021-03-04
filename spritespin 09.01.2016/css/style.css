@@ -1,0 +1,274 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+section.main {
+	width: 1000px;
+	border: 2px solid black;
+	margin: 0 auto;
+}
+#spritespin {
+
+}
+
+/* TOP HEADER */
+
+.header {
+	margin: 5px auto;
+	padding: 0;
+	width: 960px;
+	height: 70px;
+	background-color: #222222;
+	border-radius: 5px;
+	position: relative;
+}
+
+a.rollover {
+	background-image: url(images/logo.png);
+	display: inline-block;
+	height: 70px;
+	width: 126px;
+	margin-left: 20px;
+}
+
+a.rollover:hover {
+	background-image: url(images/logo-change.jpg);
+}
+
+.search {
+	height: 70px;
+	width: 300px;
+	float: right;
+	padding: 15px 0 15px 0;
+}
+
+.search-field {
+	height: 35px;
+	width: 195px;
+	float: left;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.search-field:focus {
+	border: 2px solid #888;
+	outline: none;
+}
+
+.search-btn {
+	height: 40px;
+	width: 70px;
+	float: left;
+	border-radius: 5px;
+}
+
+.search-btn:hover {
+	background-color: #080808;
+	border: 2px solid #080808;
+	color: #fff;
+}
+
+.search-btn:focus {
+	border: 2px solid #888;
+	outline: none;
+	background-color: #888;
+}
+/* END OF TOP HEADER */
+
+
+/* NAVIGATION BAR */
+
+.navigation {
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+	height: 50px;
+	background-color: #222222;
+	border-radius: 5px;
+	position: relative;
+}
+
+.navigation ul {
+	position: absolute;
+	left: 20px;
+}
+
+.navigation ul li {
+	float: left;
+	display: inline-block;
+	list-style: none;
+}
+
+.navigation ul li a {
+	padding: 17px;
+	display: block;
+	text-decoration: none;
+	color: #888;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+.navigation ul li:hover {
+	background: #080808;
+}
+
+.navigation ul li a:hover {
+	color: #fff;
+}
+/* END OF NAVIGATION BAR */
+
+
+/* CONTENT ROW */
+
+div.container {
+	margin: 5px auto;
+	width: 960px;
+	position: relative;
+}
+
+.container section:first-child {
+	margin: 0;
+}
+
+section.main-blocks {
+	padding: 0;
+	margin-left: 11px;
+	width: 310px;
+	height: 310px;
+	background-color: #222222;
+	border-radius: 5px;
+	display: inline-block;
+	position: relative;
+}
+
+.container .main-blocks a {
+	display: block;
+	width: 310px;
+	height: 310px;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.container .main-blocks img {
+	width: 310px;
+	height: 310px;
+	position: absolute;
+	border-radius: 5px;
+	left: 0;
+	top: 0;
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+.container .main-blocks a img.one {
+	filter: alpha(opacity=100);
+	opacity: 1;
+	border-radius: 5px;
+}
+
+.container .main-blocks a:hover img.one {
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	border-radius: 5px;
+}
+
+#lol {
+	width: 310px;
+	height: 310px;
+	position: absolute;
+	border-radius: 5px;
+	left: 0;
+	top: 0;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	background-color: #000;
+	color: #fff;
+	font-size: 48px;
+	padding: 120px 55px;
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+
+#lol:hover {
+	filter: alpha(opacity=70);
+	opacity: 0.6;
+	border-radius: 5px;
+}
+
+/*.container .main-blocks a img.two {
+	filter: alpha(opacity=0);
+	opacity: 0;
+	border-radius: 5px;
+}
+
+.container .main-blocks a:hover img.two, a img.two:hover {
+	filter: alpha(opacity=100);
+	opacity: 1;
+	border-radius: 5px;
+}*/
+
+/* END OF CONTENT ROW */
+
+.footer {
+	margin: 5px auto;
+	padding: 0;
+	width: 960px;
+	height: 50px;
+	background-color: #222222;
+	border-radius: 5px;
+	position: relative;
+}
+
+.social-buttons-group {
+	position: absolute;
+	top: 5px;
+	left: 50px;
+	float: left;
+}
+
+.social-btns {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 5px solid #666666;
+	border-radius: 5px;
+	background-color: #999999;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	transition: all .5s;
+}
+
+.social-btns:hover {
+	background: #34495e;
+	border: 5px solid #08c;
+}
+
+.footer p {
+	float: right;
+	font-size: 14px;
+	color: #999999;
+	margin: 20px auto;
+}
+
+.footer span {
+	padding: 0 7px;
+}
+
+.footer p a {
+	text-decoration: none;
+	color: #999999;
+}
+
+.footer p a:hover {
+	color: #fff;
+}

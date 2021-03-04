@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Cat</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="js/jquery.fancybox.css">
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery.fancybox.pack.js"></script>
+
+	<script src="js/jquery.flexslider-min.js"></script>
+
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<!--[if it IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/html5shiv-printshiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+<!-- ЛОГОТИП И ФОРМА ОБРАТНОЙ СВЯЗИ ВВЕРХУ СПРАВА -->
+<div class="fluid-container header-logo">
+	<div class="container">
+		<div class="row">
+			<div class="top-right col-xs-3 col-xs-offset-9">
+				<a href="#"><img src="./images/logo.png"></a>
+			</div>
+		</div>
+
+		<div class="row">
+			 <div class="col-xs-12">
+				<div class="header-form">
+					<p>8 (960) 204-15-79</p>
+					<a href="#" class="after-up" id="open-header-form">Обратный звонок</a>
+					<div id="form-wrapper">
+						<form id="header-form" class="none">
+							<input type="text" name="callback" placeholder="Ваш телефон">
+							<input type="submit" value="Позвоните мне!" class="button-green">
+						</form>
+					</div>				
+				</div>
+			</div> 
+		</div>
+
+	</div>
+</div>
+
+<!-- ОБЕРТКА НАВИГАЦИИ, ПОДНАВИГАЦИИ, ВЫПАДАЮЩИХ МЕНЮ ПРОКТОВ И ПОИСКА -->
+<div class="menu-wrapper">
+
+	<!-- ГОРИЗОНТАЛЬНОЕ МЕНЮ НАВИГАЦИИ -->
+	<div class="fluid-container navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="#" class="search-button" id="search-button-main"></a>
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="#" id="project-button" class="nav-submenu-project">Проекты</a></li>
+						<li><a href="project.html">Акции</a></li>
+						<li><a href="cat.html">О компании</a></li>
+						<li><a href="elements.html">Галерея</a></li>
+						<li><a href="#">Вакансии</a></li>
+					</ul>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+	<!-- ГОРИЗОНТАЛЬНОЕ МЕНЮ ПОД НАВИГАЦИЕЙ -->
+	<div class="container submenu">
+		<div class="row">
+			<div class="col-xs-12">
+				<a href="#">Главная</a>
+					<span class="separator"></span>
+				<a href="#">Каталог</a>
+					<span class="separator"></span>
+					<span class="current">Проекты домов</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- ВЫПАДАЮЩЕЕ МЕНЮ ПРОЕКТЫ -->
+	<div class="fluid-container project-row none" id="project-line-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><a href="#"><img src="images/doma.png"><span>Дома</span></a></li>
+						<li><a href="#"><img src="images/banja.png"><span>Бани</span></a></li>
+						<li><a href="#"><img src="images/fundament.png"><span>Фундаменты</span></a></li>
+						<li><a href="#"><img src="images/summer-kitchens.png"><span>Летние кухни</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ВЫПАДАЮЩЕЕ МЕНЮ ПОИСКА -->
+	<div class="fluid-container search-row none" id="search-main-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<input type="text" name="search">
+						<input type="submit" value="поиск" class="button-grey">
+				</div>
+			</div>
+		</div>
+	</div>	
+
+</div>
+
+
+
+<!-- ФИКСИРОВАННОЕ СВЕРХУ ГОРИЗОНТАЛЬНОЕ МЕНЮ НАВИГАЦИИ ПРИ ПРОКРУТКЕ -->
+<div class="fix-menu none">
+	<div class="fluid-container menu-row">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="button-menu"></div>
+					<div class="fix-menu-right">
+						<a href="#callback-popup" class="callback-popup">Обратный звонок</a>
+						<span>8 (960) 204-15-79</span>
+					</div>
+					<div class="fix-text">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+	<!-- ВЫПАДАЮЩЕЕ ГОРИЗОНТАЛЬНОЕ МЕНЮ -->
+	<div class="fluid-container items-row none">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 menu-row">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#ff" id="project-button-fix" class="has-submenu">Проекты</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Галерея</a></li>
+						<li><a href="#">Вакансии</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- ВЫПАДАЮЩЕЕ МЕНЮ ПРОЕКТЫ -->
+	<div class="fluid-container project-row none" id="project-line-menu-fixed">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><a href="#"><img src="images/doma.png"><span>Дома</span></a></li>
+						<li><a href="#"><img src="images/banja.png"><span>Бани</span></a></li>
+						<li><a href="#"><img src="images/fundament.png"><span>Фундаменты</span></a></li>
+						<li><a href="#"><img src="images/summer-kitchens.png"><span>Летние кухни</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- КОНТЕЙНЕР КОНТЕНТА -->
+<div class="fluid-container category">
+	<div class="container">
+		<!-- ЗАГОЛОВОК БЛОКА КОНТЕНТА "КАТАЛОГ ПРОЕКТОВ" -->
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="h1">
+					Каталог проектов
+				</div>
+			</div>
+		</div>
+
+		<!-- ОБЕРТКА TAB-ПАНЕЛИ -->
+		<!-- TAB-ПАНЕЛЬ -->
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#house" data-toggle="tab">Дома</a></li>
+					<li><a href="#banja" data-toggle="tab">Бани</a></li>
+					<li><a href="#fundament" data-toggle="tab">Фундаменты</a></li>
+					<li><a href="#summer-kitchens" data-toggle="tab">Летние Кухни</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<!-- TAB-ПАНЕЛЬ -> ДОМА -->
+					<div class="tab-pane fade in active" id="house">
+
+					<div class="cat-line">
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="cat-line">
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="cat-line">
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="paginatio right">
+							<a href="#" class="pag-active pag-first">Первая</a>
+							<span class="pag-unactive pag-first">Первая</span>
+							<a href="#" class="pag-number">1</a>
+							<a href="#" class="pag-number pag-current">2</a>
+							<a href="#" class="pag-number">3</a>
+							<span class="pag-unactive pag-end">Первая</span>
+							<a href="#" class="pag-active pag-end">Последняя</a>
+					</div>
+				</div>
+
+				<!-- TAB-ПАНЕЛЬ -> БАНИ -->
+				<div class="tab-pane fade" id="banja">
+
+					<div class="cat-line">
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="cat-line">
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="cat-line">
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="paginatio right">
+							<a href="#" class="pag-active pag-first">Первая</a>
+							<span class="pag-unactive pag-first">Первая</span>
+							<a href="#" class="pag-number">1</a>
+							<a href="#" class="pag-number pag-current">2</a>
+							<a href="#" class="pag-number">3</a>
+							<span class="pag-unactive pag-end">Первая</span>
+							<a href="#" class="pag-active pag-end">Последняя</a>
+					</div>
+				</div>
+
+				<!-- TAB-ПАНЕЛЬ -> ФУНДАМЕНТЫ -->
+				<div class="tab-pane fade" id="fundament">
+
+					<div class="cat-line">
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="cat-line">
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="cat-line">
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="paginatio right">
+							<a href="#" class="pag-active pag-first">Первая</a>
+							<span class="pag-unactive pag-first">Первая</span>
+							<a href="#" class="pag-number">1</a>
+							<a href="#" class="pag-number pag-current">2</a>
+							<a href="#" class="pag-number">3</a>
+							<span class="pag-unactive pag-end">Первая</span>
+							<a href="#" class="pag-active pag-end">Последняя</a>
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="summer-kitchens">
+
+					<div class="cat-line">
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="cat-line">
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="cat-line">
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="tab-item">
+							<a href="#">
+								<img src="images/house.png">
+								<div class="tab-title">Проект Д-471</div>
+								<div class="tab-discr">
+									<div class="tab-price">
+											от <div class="supe">1 500 000</div>
+											<b>1 300 000 <span class="rubl">a</span></b>
+											<div class="oppa"></div>
+									</div>
+									<div class="cat-descr">
+											<span class="tab-size">10x12 м</span>
+											<span class="tab-square">123 м<sup>2</sup></span>
+											<span class="cat-floor">2 этажа</span>
+									</div>
+								</div>
+								<div class="tab-shadow">
+										<div></div>
+										<p>Перейти к проекту</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="paginatio right">
+							<a href="#" class="pag-active pag-first">Первая</a>
+							<span class="pag-unactive pag-first">Первая</span>
+							<a href="#" class="pag-number">1</a>
+							<a href="#" class="pag-number pag-current">2</a>
+							<a href="#" class="pag-number">3</a>
+							<span class="pag-unactive pag-end">Первая</span>
+							<a href="#" class="pag-active pag-end">Последняя</a>
+					</div>	
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- FOOTER -->
+<div class="fluid-container footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="footer-1">
+					<div class="li"></div>
+					© 2015 СК “Брусмонтаж”
+					<a href="#"><span></span><br></a>
+				</div>
+				<div class="footer-2">
+					<div class="footer-title">
+						Мы в интернете:
+					</div>
+					<p class="footer-grey">
+						Пишите нам на почту: <br><a href="mailto://brusmontazh@yandex.ru">brusmontazh@yandex.ru</a>
+					</p>
+					<p class="footer-grey soc">
+						Наши страницы в соц. сетях: <br>
+						<a href="#" class="vk"></a>
+						<a href="#" class="fb"></a>
+					</p>
+				</div>
+				<div class="footer-3">
+					<div class="footer-title">
+						Производственная база:
+					</div>
+					<b>8 (960) 204-15-79</b><br>
+					<p class="footer-grey">
+						Новгородская обл., г. Пестово, ул.Лермонтова
+					</p>
+				</div>
+				<div class="footer-4">
+					<div class="footer-title">
+						Офис в Рыбинске:
+					</div>
+					<b>8(930)1180570 </b> - Николай<br>
+					г. Рыбинск, ул.Боткина, 5<br>
+					Звоните при посещении офиса заранее по телефону: <br> 
+					<b>8(960)206-15-69</b>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
+<div id="callback-popup" class="callback-popup-wrap" style="display:none">
+	<div>Заказать обратный <b>звонок!</b></div>
+	<p>маленький текст</p>
+	<form id="popup-form">
+		<input type="text" name="callback" placeholder="Ваш email">
+		<input type="submit" value="Позвоните мне!" class="button-red">
+	</form>
+</div>
+
+
+<!-- ПРАВОЕ ФИКСИРОВАННОЕ МЕНЮ -->
+<div class="right-menu none" id="r-menu">
+	<a href="#" class="r-m-item">
+		Расчет дома
+	</a>
+	<a href="#" class="r-m-item">
+		Каталог
+	</a>
+	<a href="#" class="r-m-item">
+		Отзывы
+	</a>
+	<a href="#" class="r-m-item">
+		Вопрос-ответ
+	</a>
+</div>
+
+<!-- END FOOTER -->
+
+
+</body>
+</html>
+
+
+

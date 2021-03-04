@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	
+	<link rel="stylesheet" href="js/jquery.fancybox.css">
+	<script src="js/jquery.fancybox.pack.js"></script>
+
+	<script src="js/script.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+
+</head>
+
+<body>
+	<!--[if it IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/html5shiv-printshiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+<!-- ЛОГОТИП И ФОРМА ОБРАТНОЙ СВЯЗИ ВВЕРХУ СПРАВА -->
+<div class="fluid-container header-logo">
+	<div class="container">
+		<div class="row">
+			<div class="top-right col-xs-3 col-xs-offset-9">
+				<a href="#"><img src="./images/logo.png"></a>
+			</div>
+		</div>
+
+		<div class="row">
+			 <div class="col-xs-12">
+				<div class="header-form">
+					<p>8 (960) 204-15-79</p>
+					<a href="#" class="after-up" id="open-header-form">Обратный звонок</a>
+					<div id="form-wrapper">
+						<form id="header-form" class="none">
+							<input type="text" name="callback" placeholder="Ваш телефон">
+							<input type="submit" value="Позвоните мне!" class="button-green">
+						</form>
+					</div>				
+				</div>
+			</div> 
+		</div>
+	</div>
+</div>
+
+
+
+<!-- ОБЕРТКА НАВИГАЦИИ, ПОДНАВИГАЦИИ, ВЫПАДАЮЩИХ МЕНЮ ПРОКТОВ И ПОИСКА -->
+<div class="menu-wrapper">
+
+	<!-- ГОРИЗОНТАЛЬНОЕ МЕНЮ НАВИГАЦИИ -->
+	<div class="fluid-container navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="#" class="search-button" id="search-button-main"></a>
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="#" id="project-button" class="nav-submenu-project">Проекты</a></li>
+						<li><a href="project.html">Акции</a></li>
+						<li><a href="cat.html">О компании</a></li>
+						<li><a href="elements.html">Галерея</a></li>
+						<li><a href="#">Вакансии</a></li>
+					</ul>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+	<!-- ГОРИЗОНТАЛЬНОЕ МЕНЮ ПОД НАВИГАЦИЕЙ -->
+	<div class="container submenu">
+		<div class="row">
+			<div class="col-xs-12">
+				<a href="#">Главная</a>
+					<span class="separator"></span>
+				<a href="#">Каталог</a>
+					<span class="separator"></span>
+						<span class="current">Проекты домов</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- ВЫПАДАЮЩЕЕ МЕНЮ ПРОЕКТЫ -->
+	<div class="fluid-container project-row none" id="project-line-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><a href="#"><img src="images/doma.png"><span>Дома</span></a></li>
+						<li><a href="#"><img src="images/banja.png"><span>Бани</span></a></li>
+						<li><a href="#"><img src="images/fundament.png"><span>Фундаменты</span></a></li>
+						<li><a href="#"><img src="images/summer-kitchens.png"><span>Летние кухни</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ВЫПАДАЮЩЕЕ МЕНЮ ПОИСКА -->
+	<div class="fluid-container search-row none" id="search-main-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<input type="text" name="search">
+						<input type="submit" value="поиск" class="button-grey">
+				</div>
+			</div>
+		</div>
+	</div>	
+
+</div>
+
+<!-- ФИКСИРОВАННОЕ СВЕРХУ ГОРИЗОНТАЛЬНОЕ МЕНЮ НАВИГАЦИИ ПРИ ПРОКРУТКЕ -->
+<div class="fix-menu none">
+	<div class="fluid-container menu-row">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="button-menu"></div>
+					<div class="fix-menu-right">
+						<a href="#callback-popup" class="callback-popup">Обратный звонок</a>
+						<span>8 (960) 204-15-79</span>
+					</div>
+					<div class="fix-text">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+	<!-- ВЫПАДАЮЩЕЕ ГОРИЗОНТАЛЬНОЕ МЕНЮ -->
+	<div class="fluid-container items-row none">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 menu-row">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#ff" id="project-button-fix" class="has-submenu">Проекты</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Галерея</a></li>
+						<li><a href="#">Вакансии</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- ВЫПАДАЮЩЕЕ МЕНЮ ПРОЕКТЫ -->
+	<div class="fluid-container project-row none" id="project-line-menu-fixed">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><a href="#"><img src="images/doma.png"><span>Дома</span></a></li>
+						<li><a href="#"><img src="images/banja.png"><span>Бани</span></a></li>
+						<li><a href="#"><img src="images/fundament.png"><span>Фундаменты</span></a></li>
+						<li><a href="#"><img src="images/summer-kitchens.png"><span>Летние кухни</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- КОНТЕНТ -->
+<div class="container content">
+	<div class="row"><div class="col-xs-12">
+	<!-- ЛЕВАЯ КОЛОНКА КОНТЕНТА -->
+		<div class="main-left">
+			<div class="text">
+				<h1>Строительство из бруса</h1>
+				<p>Любой здравомыслящий человек мечтает о красивом, уютном доме в 
+живописном местечке за городом, который можно использовать для сезонного
+ или постоянного проживания. Стоит уточнить, что какими бы прекрасными 
+ни были загородные дома на вторичном рынке жилья, они не могут в полной 
+мере моответствовать всем требованиям будущего домовладельца.</p>
+				<p>Любой здравомыслящий человек мечтает о красивом, уютном доме в 
+живописном местечке за городом, который можно использовать для сезонного
+ или постоянного проживания. Стоит уточнить, что какими бы прекрасными 
+ни были загородные дома на вторичном рынке жилья, они не могут в полной 
+мере моответствовать всем требованиям будущего домовладельца.</p>
+				<h2>Постройте дом своей мечты</h2>
+				<p>Любой здравомыслящий человек мечтает о красивом, уютном доме в 
+живописном местечке за городом, который можно использовать для сезонного
+ или постоянного проживания. Стоит уточнить, что какими бы прекрасными 
+ни были загородные дома на вторичном рынке жилья, они не могут в полной 
+мере моответствовать всем требованиям будущего домовладельца.</p>
+				<h3>загородные дома на вторичнос рынке жильяна вторичнос рынке жильяна вторичнос рынке жилья</h3>
+				<p>Любой здравомыслящий человек мечтает о красивом, уютном доме в 
+живописном местечке за городом, который можно использовать для сезонного
+ или постоянного проживания. Стоит уточнить, что какими бы прекрасными 
+ни были загородные дома на вторичном рынке жилья, они не могут в полной 
+мере моответствовать всем требованиям будущего домовладельца.</p>
+				<ol>
+					<li>– Любой здравомыслящий человек мечтает о красивом, уютном доме в
+ живописном местечке за городом, который можно использовать для 
+сезонного или постоянного проживания.</li>
+					<li>– Любой здравомыслящий человек мечтает о красивом, уютном доме в
+ живописном местечке за городом, который можно использовать для 
+сезонного или постоянного проживания.</li>
+					<li>– Любой здравомыслящий человек мечтает о красивом, уютном доме в
+ живописном местечке за городом, который можно использовать для 
+сезонного или постоянного проживания.</li>
+				</ol>
+				<p>Любой здравомыслящий человек мечтает о красивом, уютном доме в 
+живописном местечке за городом, который можно использовать для сезонного
+ или постоянного проживания. Стоит уточнить, что какими бы прекрасными 
+ни были загородные дома на вторичном рынке жилья, они не могут в полной 
+мере моответствовать всем требованиям будущего домовладельца.</p>
+				<h4>Выбирая нас ,вы получаете:</h4>
+				<h5>Надежного исполнителя</h5>
+				<ul>
+					<li>всем требованиям будущего домовладельца.</li>
+					<ul>
+						<li>всем требованиям будущего домовладельца.</li>
+						<li>всем требованиям будущего домовладельца.</li>
+					</ul>
+					<li>всем требованиям будущего домовладельца.</li>
+					<li>всем требованиям будущего домовладельца.</li>
+				</ul>
+			</div>
+		</div>
+
+	<!-- ПРАВАЯ КОЛОНКА -->
+		<div class="main-right">
+		<!-- РКЛАМНЫЙ БАННЕР -->
+			<a href="#" class="banner">
+				<img src="images/banner.png">
+			</a>
+		<!-- СПИСОК СО ЗВЕЗДОЧКАМИ -->
+			<div class="main-list">
+				<div class="main-list-title">
+					Важно знать
+				</div>
+				<ul>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Документация</a></li>
+					<li><a href="#">Процесс строительства</a></li>
+					<li><a href="#">Отзывы</a></li>
+				</ul>
+			</div>
+		<!-- СЛАЙДЕР 1 -->
+			<div class="main-right-slide main-articles">
+				<ul class="slides">
+					<li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+						<a href="#">
+							<div class="main-articles-title">
+								Строительство дом1а из бруса под ключ
+							</div>
+							<img draggable="false" src="images/dom2.png">
+						</a>
+					</li>
+					<li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 1;">
+						<a href="#">
+							<div class="main-articles-title">
+								Строительство до2ма из бруса под ключ
+							</div>
+							<img draggable="false" src="images/dom2.png">
+						</a>
+					</li>
+					<li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 1;">
+						<a href="#">
+							<div class="main-articles-title">
+								Строительство до3ма из бруса под ключ
+							</div>
+							<img draggable="false" src="images/dom2.png">
+						</a>
+					</li>
+					<div class="clearfix"></div>
+				</ul>
+				<div class="main-articles-buttons">
+					<div class="art-right"></div>
+					<div class="art-left"></div>
+					<a href="#">Все статьи</a>
+				</div>
+				
+			</div>
+
+		<!-- НАШИ РАБОТЫ СЛАЙДЕР 2 -->
+			<div class="main-list">
+				<div class="main-list-title">
+					Наши работы:
+				</div>
+			</div>
+			<div class="main-right-slide main-works">
+				<ul class="slides">
+					<li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+						<a href="#">
+							<div class="main-articles-title">
+								Строительство дома4 из бруса под ключ
+							</div>
+							<img draggable="false" src="images/dom2.png">
+						</a>
+					</li>
+					<li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 1;">
+						<a href="#">
+							<div class="main-articles-title">
+								Строительство дома 5из бруса под ключ
+							</div>
+							<img draggable="false" src="images/dom2.png">
+						</a>
+					</li>
+					<li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1.560068; display: block; z-index: 1;">
+						<a href="#">
+							<div class="main-articles-title">
+								Строительство дома 6из бруса под ключ
+							</div>
+							<img draggable="false" src="images/dom2.png">
+						</a>
+					</li>
+					<div class="clearfix"></div>
+				</ul>
+				<div class="main-articles-buttons">
+					<div class="art-right"></div>
+					<div class="art-left"></div>
+					<a href="#">В галерею</a>
+				</div>
+			</div>
+		</div>
+	</div></div>
+</div>
+
+
+<!-- ГАЛЕРЕЯ ФОТОГРАФИЙ -->
+<div class="container gallery">
+	<div class="row">
+		<div class="col-xs-12">
+			<h2>Галерея</h2>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-1">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-1">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-1">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-2">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-2">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-2">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-3">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-3">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-3">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-4">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-4">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-4">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-5">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-5">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-5">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-6">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-6">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-6">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-7">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-7">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-7">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-8">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-8">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-8">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-9">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-9">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-9">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-10">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-10">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-10">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-11">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-11">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-11">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-12">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-12">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-12">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-13">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-13">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-13">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-14">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-14">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-14">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-15">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-15">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-15">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="gallery-group">
+				<a href="images/dom1.png" rel="group-16">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+					<div class="gallery-shadow">
+						<div class="photo-icon"></div>
+						<div class="photo-number">6 фото</div>
+					</div>
+				</a>
+				<a href="images/dom2.png" rel="group-16">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+				<a href="images/dom1.png" rel="group-16">
+					<img src="images/gal1.png">
+					<p>Дом по проекту д-47 в д. М...</p>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<!-- НАВИГАЦИЯ ПОД ГАЛЕРЕЕЙ -->
+			<div class="paginatio right">
+				<a href="#" class="pag-active pag-first">Первая</a>
+				<span class="pag-unactive pag-first">Первая</span>
+				<a href="#" class="pag-number">1</a>
+				<a href="#" class="pag-number pag-current">2</a>
+				<a href="#" class="pag-number">3</a>
+				<span class="pag-unactive pag-end">Первая</span>
+				<a href="#" class="pag-active pag-end">Последняя</a>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- ФОРМА -->
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+		<div class="h2">Формы</div>
+		<div class="h3">Оставьте заявку на этот проект:</div>
+			<div class="form">
+				<form class="forma">
+					<div class="form-line">
+						<span><input placeholder="Ваше имя" type="text"></span>
+					</div>
+					<div class="form-line">
+						<span><input placeholder="Ваш телефон" type="text"></span>
+					</div>
+					<div class="form-line">
+						<span><input placeholder="Ваш e-mail" type="text"></span>
+						<span><input id="frjy" checked="checked" type="checkbox"><label for="frjy"><span></span><i>Подписаться на новости</i></label></span>
+					</div>
+					<div class="form-line">
+						<span><textarea placeholder="Сообщение" type="text"></textarea></span>
+						<div class="prikr"><input size="1" multiple="" style="-moz-opacity: 0;  filter: alpha(opacity=0);   opacity: 0;" name="file" id="file" type="file"><span id="name">Прикрепить файл	</span></div>
+					</div>
+					<div class="form-line">
+						<span>
+							<div class="svaz">
+								<span class="form-text">Связаться</span>
+								<input checked="checked" name="fo2" id="for2" type="radio">
+								<label for="for2">
+									<div>По телефону</div>
+								</label>
+								<input name="fo2" id="for3" type="radio">
+								<label for="for3">
+									<div>По e-mail</div>
+								</label>
+						</div>
+						</span>
+					</div>
+					<div class="form-line">
+						<span>
+							<span class="form-text">Время звонка:</span>
+							<div class="vrema">
+							<input id="spi" type="hidden">
+								<div class="spih">
+								<div>c 9.00 до 12.00</div>
+								<ul class="spih-t none">
+									<li>c 9.00 до 12.00</li>
+									<li>c 12.00 до 17.00</li>
+									<li>c 17.00 до 21.00</li>
+								</ul>
+								</div>
+							</div>
+						</span>
+					</div>				
+				<div class="form-line">
+					<span class="form-info">
+						<i>Мы не передаем информацию третьим лицам</i>
+					</span>
+					<span class="form-submit"><input value="Оставить заявку" class="button-green" type="submit"></span>
+				</div>
+			</form>
+		</div>
+		</div>
+	</div>
+</div>
+
+<!-- ТАБЛИЦА -->
+<div class="container tabl">
+	<div class="row"><div class="col-xs-12">
+		<div class="h2">Таблица</div>
+		<table>
+			<tbody><tr>
+				<td class="th1">Проект дома</td>
+				<td class="th2" colspan="2">Цена проекта дома</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="th3"><b>Брусовой вариант</b><br>100x150 /  200x150 мм</td>
+				<td class="th3"><b>Каркасный вариант</b><br>50 / 150 мм</td>
+			</tr>
+			<tr>
+				<td><b>БД - 43</b></td>
+				<td>300 / 400 / 500 Т<span class="rubl">a</span></td>
+				<td>300 / 400 Т<span class="rubl">a</span></td>
+			</tr>
+			<tr>
+				<td><b>БД - 40</b></td>
+				<td>400 / 450 / 550 Т<span class="rubl">a</span></td>
+				<td>300 / 400 Т<span class="rubl">a</span></td>
+			</tr>
+			<tr>
+				<td><b>БД - 41</b></td>
+				<td>1 000 / 1 300 / 1 500 Т<span class="rubl">a</span><br>+ доставка</td>
+				<td></td>
+			</tr>
+		</tbody></table>
+	</div></div>
+</div>
+
+<!-- КОММЕНТАРИИ -->
+<div class="container otz">
+	<div class="row"><div class="col-xs-12">
+		<div class="h2">Отзывы</div>
+		<div class="otz-item">
+			<img src="images/otz1.png">
+			<div class="otz-text">
+				<b>Владимир:</b>
+				<p>Надеяться на две группы могли бы тогда. Поглощение света очень 
+много, и на отождествление лишь слабые галактики и. Содержащей десятки 
+квадратных минут отождествления оптических объектов были.Надеяться на 
+две группы могли бы тогда. Поглощение света очень много, и на 
+отождествление лишь слабые галактики и. Содержащей десятки квадратных 
+минут отождествления оптических объектов были.</p>
+				
+			</div>
+		</div>
+		<div class="otz-item">
+			<img src="images/otz2.png">
+			<div class="otz-text">
+				<b>ADS Group:</b>
+				<p>Надеяться на две группы могли бы тогда. Поглощение света очень 
+много, и на отождествление лишь слабые галактики и. Содержащей десятки 
+квадратных минут отождествления оптических объектов были.</p>
+				
+			</div>
+		</div>
+		<div class="otz-item">
+			<img src="images/otz3.png">
+			<div class="otz-text">
+				<b>Дмитрий Васильев:</b>
+				<p>Надеяться на две группы могли бы тогда. Поглощение света очень 
+много, и на отождествление лишь слабые галактики и. Содержащей десятки 
+квадратных минут отождествления оптических объектов были.</p>
+				
+			</div>
+		</div>
+	</div></div>
+</div>
+
+<!-- ВОПРОС-ОТВЕТ -->
+<div class="container faq">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="h2">Вопрос-ответ</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+								<span> Пункт Группы Свертывания #1Пункт Группы Свертывания 
+#1Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы 
+Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания 
+#1Пункт Группы Свертывания #1Пункт Группы Свертывания #1Пункт Группы 
+Свертывания #1Пункт Группы Свертывания #1Пункт Группы Свертывания 
+#1Пункт Группы Свертывания #1</span>
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life 
+accusamus terry richardson ad squid. 3 wolf moon officia aute, non 
+cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid 
+single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh 
+helvetica, craft beer labore wes anderson cred nesciunt sapiente ea 
+proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft 
+beer farm-to-table, raw denim aesthetic synth nesciunt you probably 
+haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+								<span>Пункт Группы Свертывания #2</span>
+							</a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life 
+accusamus terry richardson ad squid. 3 wolf moon officia aute, non 
+cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid 
+single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh 
+helvetica, craft beer labore wes anderson cred nesciunt sapiente ea 
+proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft 
+beer farm-to-table, raw denim aesthetic synth nesciunt you probably 
+haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
+							<span>Пункт Группы Свертывания #3</span>
+							</a>
+						</h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse">
+						<div class="panel-body">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life 
+accusamus terry richardson ad squid. 3 wolf moon officia aute, non 
+cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid 
+single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh 
+helvetica, craft beer labore wes anderson cred nesciunt sapiente ea 
+proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft 
+beer farm-to-table, raw denim aesthetic synth nesciunt you probably 
+haven't heard of them accusamus labore sustainable VHS.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ЦИТАТА -->
+<div class="container quotes">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="h2">Цитата</div>
+			<div class="quote-body">
+				<div class="quote-margin">«  »</div>
+				<div class="quote-text">
+					Anim pariatur cliche reprehenderit, enim eiusmod high life 
+accusamus terry richardson ad squid. 3 wolf moon officia aute, non 
+cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum 
+eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid 
+single-origin coffee nulla assumenda shoreditch et
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- FOOTER -->
+<div class="fluid-container footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="footer-1">
+					<div class="li"></div>
+					© 2015 СК “Брусмонтаж”
+					<a href="#"><span></span><br></a>
+				</div>
+				<div class="footer-2">
+					<div class="footer-title">
+						Мы в интернете:
+					</div>
+					<p class="footer-grey">
+						Пишите нам на почту: <br><a href="mailto://brusmontazh@yandex.ru">brusmontazh@yandex.ru</a>
+					</p>
+					<p class="footer-grey soc">
+						Наши страницы в соц. сетях: <br>
+						<a href="#" class="vk"></a>
+						<a href="#" class="fb"></a>
+					</p>
+				</div>
+				<div class="footer-3">
+					<div class="footer-title">
+						Производственная база:
+					</div>
+					<b>8 (960) 204-15-79</b><br>
+					<p class="footer-grey">
+						Новгородская обл., г. Пестово, ул.Лермонтова
+					</p>
+				</div>
+				<div class="footer-4">
+					<div class="footer-title">
+						Офис в Рыбинске:
+					</div>
+					<b>8(930)1180570 </b> - Николай<br>
+					г. Рыбинск, ул.Боткина, 5<br>
+					Звоните при посещении офиса заранее по телефону: <br> 
+					<b>8(960)206-15-69</b>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
+<div id="callback-popup" class="callback-popup-wrap" style="display:none">
+	<div>Заказать обратный <b>звонок!</b></div>
+	<p>маленький текст</p>
+	<form id="popup-form">
+		<input type="text" name="callback" placeholder="Ваш email">
+		<input type="submit" value="Позвоните мне!" class="button-red">
+	</form>
+</div>
+
+
+<!-- ПРАВОЕ ФИКСИРОВАННОЕ МЕНЮ -->
+<div class="right-menu none" id="r-menu">
+	<a href="#" class="r-m-item">
+		Расчет дома
+	</a>
+	<a href="#" class="r-m-item">
+		Каталог
+	</a>
+	<a href="#" class="r-m-item">
+		Отзывы
+	</a>
+	<a href="#" class="r-m-item">
+		Вопрос-ответ
+	</a>
+</div>
+
+<!-- END FOOTER -->
+
+</body>
+
+</html>

@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Project</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="js/jquery.fancybox.css">
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery.fancybox.pack.js"></script>
+
+	<script src="js/jquery.flexslider-min.js"></script>
+
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<!--[if it IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/html5shiv-printshiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- ХЕДЕР и обратный вызов -->
+	<div class="fluid-container header-logo">
+		<div class="container">
+			<div class="row">
+				<div class="top-right col-xs-3 col-xs-offset-9">
+					<a href="#"><img src="images/logo.png"></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="header-form">
+						<p>8 (960) 204-15-79</p>
+						<a href="#" class="after-up" id="open-header-form">Обратный звонок</a>
+						<div id="form-wrapper">
+							<form id="header-form" class="none">
+								<input type="text" name="callback" placeholder="Ваш телефон">
+								<input type="submit" value="Позвоните мне!" class="button-green">
+							</form>
+						</div>				
+					</div>
+				</div> 
+			</div>
+
+		</div>
+	</div>
+
+	<div class="menu-wrapper">
+
+		<div class="fluid-container navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<a href="#" class="search-button" id="search-button-main"></a>
+						<ul>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="#" id="project-button" class="nav-submenu-project">Проекты</a></li>
+							<li><a href="project.html">Акции</a></li>
+							<li><a href="cat.html">О компании</a></li>
+							<li><a href="elements.html">Галерея</a></li>
+							<li><a href="#">Вакансии</a></li>
+						</ul>
+					</div>
+				</div>		
+			</div>
+		</div>
+
+		<div class="fluid-container project-row none" id="project-line-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<ul>
+							<li><a href="#"><img src="images/doma.png"><span>Дома</span></a></li>
+							<li><a href="#"><img src="images/banja.png"><span>Бани</span></a></li>
+							<li><a href="#"><img src="images/fundament.png"><span>Фундаменты</span></a></li>
+							<li><a href="#"><img src="images/summer-kitchens.png"><span>Летние кухни</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fluid-container search-row none" id="search-main-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<input type="text" name="search">
+						<input type="submit" value="поиск" class="button-grey">
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- конец хедера и обратного вызова -->
+	 																<!--- МЕНЮ ПРОКРУТКИ -->
+	<div class="fix-menu none">
+		<div class="fluid-container menu-row">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="button-menu"></div>
+						<div class="fix-menu-right">
+							<a href="#callback-popup" class="callback-popup">Обратный звонок</a>
+							<span>8 (960) 204-15-79</span>
+						</div>
+						<div class="fix-text">
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+
+		<!-- ITEM LINE -->
+		<div class="fluid-container items-row none">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 menu-row">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#ff" id="project-button-fix" class="fix-submenu-project">Проекты</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Галерея</a></li>
+							<li><a href="#">Вакансии</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+							<!-- PROJECT LINE -->
+		<div class="fluid-container project-row none">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<ul>
+							<li><a href="#"><img src="images/doma.png"><span>Дома</span></a></li>
+							<li><a href="#"><img src="images/banja.png"><span>Бани</span></a></li>
+							<li><a href="#"><img src="images/fundament.png"><span>Фундаменты</span></a></li>
+							<li><a href="#"><img src="images/summer-kitchens.png"><span>Летние кухни</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- правое меню сопровождающие	 -->
+	<div class="right-menu none" id="r-menu">
+
+		<a href="#" class="r-m-item">
+			Расчет дома
+		</a>
+
+		<a href="#" class="r-m-item">
+			Каталог
+		</a>
+
+		<a href="#" class="r-m-item">
+			Отзывы
+		</a>
+
+		<a href="#" class="r-m-item">
+			Вопрос-ответ
+		</a>
+	</div>
+	<!-- ЗАКЛАДКИ -->
+	<div class="container submenu">
+		<div class="row">
+			<div class="col-xs-12">
+				<a href="#">Главная</a>
+					<span class="separator"></span>
+				<a href="#">Каталог</a>
+					<span class="separator"></span>
+					<span class="current">Проекты домов</span>
+			</div>
+		</div>
+	</div>
+	<!-- конец закладок -->
+
+	<!-- CONTENT -->
+	<div class="container content project">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="project-title">
+					<b>Проект д-47</b>
+				</div>
+				<!-- LEFT SIDE -->
+				<div class="main-left">
+				<!-- ФОТО -->
+					<div class="project-gal">
+						<a href="images/Rectangle2.png" class="fancy project-image">
+							<img src="images/Rectangle2.png">
+						</a>
+						<div class="thumbn">
+							<a rel="group-1" href="images/Rectangle17.png">
+								<img src="images/Rectangle17.png">
+							</a>
+							<a rel="group-2" href="images/Rectangle16.png">
+								<img src="images/Rectangle16.png">
+							</a>
+							<a rel="group-3" href="images/Rectangle18.png">
+								<img src="images/Rectangle18.png">
+							</a>				
+						</div>
+				</div>
+				<!-- ПЛАНИРОВКА -->
+				<div class="plan">
+					<div class="plan-title">
+						Планировка:
+					</div>
+
+					<a href="images/plan.png" class="fancy">
+						<img src="images/plan.png">
+					</a>
+				</div>
+			</div>
+
+			<!-- RIGHT SIDE -->
+			<div class="main-right">
+				<div class="navik">
+					<span class="nav-left">Предыдущий</span>
+					<a href="#" class="nav-right">Следующий</a>
+				</div>
+<!-- ОБЩИЕ ХАРАКТЕРИСТИКИ -->
+				<div class="option-title">
+					Общие хар-ки
+				</div>
+
+				<div class="option-size">
+					<span class="tab-size">10x12 м</span>
+					<span class="tab-square">123 м<sup>2</sup></span>
+				</div>
+
+				<div class="option-items">
+					<p><b>Материал:</b> брус</p>
+					<p><b>Этажность:</b> 1этаж + мансарда</p>
+					<p><b>Особенности:</b> терасса, балкон, сауна, гараж</p>
+					<p><b>Срок строительства:</b> 14 дней</p>
+				</div>
+		<!-- КОМПЛЕКТАЦИЯ -->
+				<div class="option-list">
+					<div class="spih">
+						<div>
+							Зимняя комплектация
+						</div>
+						<ul class="spih-t none">
+							<li>Летняя комплектация</li>
+							<!-- текст который будет занесен в 1й li -->
+							<li class="none">
+								1 300 000
+								<span class="rubl">a</span>
+							</li>
+
+							<li>Зимняя комплектация</li>
+
+							<li class="none">
+								1 400 000
+								<span class="rubl">a</span>
+							</li>
+
+							<li>Осенняя комплектация</li>
+
+							<li class="none">
+								1 500 000
+								<span class="rubl">a</span>
+							</li>
+
+							<li>Весенняя комплектация</li>
+
+							<li class="none">
+								1 600 000
+								<span class="rubl">a</span>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
+				<div class="option-price">
+					<div class="supe">1 500 000</div>
+					<div id="price" class="price">1 400 000<span class="rubl">a</span></div>
+				</div>
+
+				<div class="option-submit">
+					<a href="#project-popup" class="button-green fancy">Оставить заявку</a>
+				</div>
+				<!-- КОНЕЦ КОМПЛЕКТАЦИИ -->
+				<!-- РЕКЛАМА -->
+				<a href="#" class="banner">
+					<img src="images/banner.png">
+				</a>
+
+				<div class="main-list">
+					<div class="main-list-title">
+						Важно знать
+					</div>
+
+					<ul>
+						<li>
+							<a href="#">Доставка и оплата</a>
+						</li>
+
+						<li>
+							<a href="#">Документация</a>
+						</li>
+
+						<li>
+							<a href="#">Процесс строительства</a>
+						</li>
+
+						<li>
+							<a href="#">Отзывы</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- end r-c -->
+
+	<!-- ЛУЧШИЕ ПРОЕКТЫ -->
+	<div class="container comp">
+		<div class="row">
+			<div class="col-xs-12">
+				<!-- ЗАГЛАВИЕ -->
+				<div class="comp-title">
+					Лучшие проекты
+				</div>
+			</div>
+		</div>
+		<!-- ВКЛАДКИ -->
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#house" data-toggle="tab">
+							Зимний вариант
+						</a>
+					</li>
+
+					<li>
+						<a href="#bath" data-toggle="tab">
+							Каркас
+						</a>
+					</li>
+
+					<li>
+						<a href="#base" data-toggle="tab">
+							Летний Вариант
+						</a>
+					</li>
+
+					<li>
+						<a href="#kitchen" data-toggle="tab">
+							Под усадку
+						</a>
+					</li>
+				</ul>
+
+				<!-- СОДЕРЖИМОЕ -->
+				<div class="tab-content">
+
+					<!-- TAB1 -->
+					<div class="tab-pane fade in active" id="house">
+						<div class="comp-price">
+							<div class="comp-price-title">Цена дома</div>
+							<div class="supe">1 500 000</div>
+							<div id="price" class="price">
+								1 300 000 
+								<span class="rubl">a</span>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Наружные стены из бруса
+							</div>
+							<div class="comp-2">
+								100 x 150 мм | 150 x 150 мм
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Два нижних венца — обрезной брус
+							</div>
+							<div class="comp-2">
+								100 x 150 мм | 150 x 150 мм
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Сборка угловых соединений бруса
+							</div>
+							<div class="comp-2">
+								В полдерева, для утепления пазов прокладывается льноволокно Дополнительное утепление
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Высота потолка
+							</div>
+							<div class="comp-2">
+								В чистоте; 1 -го этажа -2.45 м, 2-го этажа 2.3 м
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Лаги пола, потолка
+							</div>
+							<div class="comp-2">
+								Брус 50х150 мм через 60 см
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Черновой пол
+							</div>
+							<div class="comp-2">
+								Брус 50х150 мм через 60 см
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Перегородки 1 этажа
+							</div>
+							<div class="comp-2">
+								Брус профилированный 100х150 мм
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Стропила
+							</div>
+							<div class="comp-2">
+								Брус 50х150 мм с брусом 50х100 через 1.0 м
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Стропила
+							</div>
+							<div class="comp-2">
+								Доска 20х100 мм через 20-25 см
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Фронтоны, свесы
+							</div>
+							<div class="comp-2">
+								Оббиваются сухой вагонкой
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Кровля
+							</div>
+							<div class="comp-2">
+								Ондулин красного, зеленого или коричневого 
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- TAB2 -->
+					<div class="tab-pane fade" id="bath">
+						<div class="comp-price">
+							<div class="comp-price-title">Цена дома</div>
+							<div class="supe">1 500 000</div>
+							<div id="price" class="price">
+								1 300 000 
+								<span class="rubl">a</span>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Наружные стены из бруса
+							</div>
+							<div class="comp-2">
+								100 x 150 мм | 150 x 150 мм
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Два нижних венца — обрезной брус
+							</div>
+							<div class="comp-2">
+								100 x 150 мм | 150 x 150 мм
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Сборка угловых соединений бруса
+							</div>
+							<div class="comp-2">
+								В полдерева, для утепления пазов прокладывается льноволокно Дополнительное утепление
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Высота потолка
+							</div>
+							<div class="comp-2">
+								В чистоте; 1 -го этажа -2.45 м, 2-го этажа 2.3 м
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Лаги пола, потолка
+							</div>
+							<div class="comp-2">
+								Брус 50х150 мм через 60 см
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Черновой пол
+							</div>
+							<div class="comp-2">
+								Брус 50х150 мм через 60 см
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Перегородки 1 этажа
+							</div>
+							<div class="comp-2">
+								Брус профилированный 100х150 мм
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Стропила
+							</div>
+							<div class="comp-2">
+								Брус 50х150 мм с брусом 50х100 через 1.0 м
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Стропила
+							</div>
+							<div class="comp-2">
+								Доска 20х100 мм через 20-25 см
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Фронтоны, свесы
+							</div>
+							<div class="comp-2">
+								Оббиваются сухой вагонкой
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Кровля
+							</div>
+							<div class="comp-2">
+								Ондулин красного, зеленого или коричневого 
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- TAB3 -->
+					<div class="tab-pane fade" id="base">
+						<div class="comp-price">
+							<div class="comp-price-title">Цена дома</div>
+							<div class="supe">1 500 000</div>
+							<div id="price" class="price">
+								1 300 000 
+								<span class="rubl">a</span>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Наружные стены из бруса
+							</div>
+							<div class="comp-2">
+								100 x 150 мм | 150 x 150 мм
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Два нижних венца — обрезной брус
+							</div>
+							<div class="comp-2">
+								100 x 150 мм | 150 x 150 мм
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Сборка угловых соединений бруса
+							</div>
+							<div class="comp-2">
+								В полдерева, для утепления пазов прокладывается льноволокно Дополнительное утепление
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Высота потолка
+							</div>
+							<div class="comp-2">
+								В чистоте; 1 -го этажа -2.45 м, 2-го этажа 2.3 м
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Лаги пола, потолка
+							</div>
+							<div class="comp-2">
+								Брус 50х150 мм через 60 см
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Черновой пол
+							</div>
+							<div class="comp-2">
+								Брус 50х150 мм через 60 см
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Перегородки 1 этажа
+							</div>
+							<div class="comp-2">
+								Брус профилированный 100х150 мм
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Стропила
+							</div>
+							<div class="comp-2">
+								Брус 50х150 мм с брусом 50х100 через 1.0 м
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Стропила
+							</div>
+							<div class="comp-2">
+								Доска 20х100 мм через 20-25 см
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Фронтоны, свесы
+							</div>
+							<div class="comp-2">
+								Оббиваются сухой вагонкой
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Кровля
+							</div>
+							<div class="comp-2">
+								Ондулин красного, зеленого или коричневого 
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- TAB4 -->
+					<div class="tab-pane fade" id="kitchen">
+						<div class="comp-price">
+							<div class="comp-price-title">Цена дома</div>
+							<div class="supe">1 500 000</div>
+							<div id="price" class="price">
+								1 300 000 
+								<span class="rubl">a</span>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Наружные стены из бруса
+							</div>
+							<div class="comp-2">
+								100 x 150 мм | 150 x 150 мм
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Два нижних венца — обрезной брус
+							</div>
+							<div class="comp-2">
+								100 x 150 мм | 150 x 150 мм
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Сборка угловых соединений бруса
+							</div>
+							<div class="comp-2">
+								В полдерева, для утепления пазов прокладывается льноволокно Дополнительное утепление
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Высота потолка
+							</div>
+							<div class="comp-2">
+								В чистоте; 1 -го этажа -2.45 м, 2-го этажа 2.3 м
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Лаги пола, потолка
+							</div>
+							<div class="comp-2">
+								Брус 50х150 мм через 60 см
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Черновой пол
+							</div>
+							<div class="comp-2">
+								Брус 50х150 мм через 60 см
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Перегородки 1 этажа
+							</div>
+							<div class="comp-2">
+								Брус профилированный 100х150 мм
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Стропила
+							</div>
+							<div class="comp-2">
+								Брус 50х150 мм с брусом 50х100 через 1.0 м
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Стропила
+							</div>
+							<div class="comp-2">
+								Доска 20х100 мм через 20-25 см
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Фронтоны, свесы
+							</div>
+							<div class="comp-2">
+								Оббиваются сухой вагонкой
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+						<div class="comp-line">
+							<div class="comp-1">
+								Кровля
+							</div>
+							<div class="comp-2">
+								Ондулин красного, зеленого или коричневого 
+							</div>
+							<div class="comp-3">
+								<a href="images/Rectangle17.png" class="fancy"><img src="images/Rectangle17.png"></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- КОНЕЦ ВКЛАДОК И СОДЕРЖИМОГО -->
+	<!-- ФОРМА ЗАЯВКИ -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="h3">Оставьте заявку на этот проект:</div>
+				<div class="form proj">
+					<form class="forma">
+						<div class="form-line">
+							<span>
+								<input placeholder="Ваше имя" type="text">
+								<input placeholder="Ваш телефон" type="text">
+							</span>
+						</div>
+						<div class="form-line">
+							<span>
+								<textarea placeholder="Сообщение" type="text"></textarea>
+							</span>
+						</div>							
+						<div class="form-line">
+							<span class="form-info">
+								<i>Мы не передаем информацию третьим лицам</i>
+							</span>
+							<span class="form-submit">
+								<input type="submit" value="Оставить заявку" class="button-green">
+							</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ФУТЕР -->
+		<div class="fluid-container footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="footer-1">
+						<div class="li"></div>
+						© 2015 СК “Брусмонтаж”
+						<a href="#"><span></span><br></a>
+					</div>
+					<div class="footer-2">
+						<div class="footer-title">
+							Мы в интернете:
+						</div>
+						<p class="footer-grey">
+							Пишите нам на почту: <br><a href="mailto://brusmontazh@yandex.ru">brusmontazh@yandex.ru</a>
+						</p>
+						<p class="footer-grey soc">
+							Наши страницы в соц. сетях: <br>
+							<a href="#" class="vk"></a>
+							<a href="#" class="fb"></a>
+						</p>
+					</div>
+					<div class="footer-3">
+						<div class="footer-title">
+							Производственная база:
+						</div>
+						<b>8 (960) 204-15-79</b><br>
+						<p class="footer-grey">
+							Новгородская обл., г. Пестово, ул.Лермонтова
+						</p>
+					</div>
+					<div class="footer-4">
+						<div class="footer-title">
+							Офис в Рыбинске:
+						</div>
+						<b>8(930)1180570 </b> - Николай<br>
+						г. Рыбинск, ул.Боткина, 5<br>
+						Звоните при посещении офиса заранее по телефону: <br> 
+						<b>8(960)206-15-69</b>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ОБРАТНЫЙ ЗВОНОК -->
+	<div id="callback-popup" class="callback-popup-wrap" style="display:none">
+		<div>Заказать обратный <b>звонок!</b></div>
+		<p>маленький текст</p>
+		<form id="popup-form">
+			<input type="text" name="callback" placeholder="Ваш email">
+			<input type="submit" value="Позвоните мне!" class="button-red">
+		</form>
+	</div>
+	<!-- Конец вызова -->
+	<!-- ОСТАВИТЬ ЗАЯВКУ -->
+	<div id="project-popup" class="project-popup-wrap" style="display:none">
+		<div class="h3">Оставьте заявку на этот проект:</div>
+		<div class="form">
+			<form class="forma">
+				<div class="form-line">
+					<span><input placeholder="Ваше имя" type="text"></span>
+				</div>
+				<div class="form-line">
+					<span><input placeholder="Ваш телефон" type="text"></span>
+				</div>
+				<div class="form-line">
+					<span><input placeholder="Ваш e-mail" type="text"></span>
+					<span><input type="checkbox" id="frjy" checked="checked"><label for="frjy"><span></span><i>Подписаться на новости</i></label></span>
+				</div>
+				<div class="form-line">
+					<span><textarea placeholder="Сообщение" type="text"></textarea></span>
+					<div class="prikr"><input type="file" size="1" multiple="" style="-moz-opacity: 0;  filter: alpha(opacity=0);   opacity: 0;" name="file" id="file"><span id="name">Прикрепить файл</span></div>
+				</div>
+				<div class="form-line">
+					<span>
+						<div class="svaz">
+							<span class="form-text">Связаться</span>
+							<input type="radio" checked="checked" name="fo2" id="for2">
+							<label for="for2">
+								<div>По телефону</div>
+							</label>
+							<input type="radio" name="fo2" id="for3">
+							<label for="for3">
+								<div>По e-mail</div>
+							</label>
+						</div>
+					</span>
+				</div>
+				<div class="form-line">
+					<span>
+						<span class="form-text">Время звонка:</span>
+						<div class="vrema">
+							<input type="hidden" id="spi">
+							<div class="spih">
+							<div>c 9.00 до 12.00</div>
+								<ul class="spih-t none">
+									<li>c 9.00 до 12.00</li>
+									<li>c 12.00 до 17.00</li>
+									<li>c 17.00 до 21.00</li>
+								</ul>
+							</div>
+						</div>
+					</span>
+				</div>				
+				<div class="form-line">
+					<span class="form-info">
+						<i>Мы не передаем информацию третьим лицам</i>
+					</span>
+					<span class="form-submit"><input type="submit" value="Оставить заявку" class="button-green"></span>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
